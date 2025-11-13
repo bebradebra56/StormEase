@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1056940592198",
+    "project_id": "stormease-1cb81",
+    "storage_bucket": "stormease-1cb81.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1056940592198:android:c43b85b11dda20ed26ce47",
+        "android_client_info": {
+          "package_name": "com.stromeese.appsofr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZI0yO3w3VldYs7qTZZJqMjj8MFYzaQ9A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

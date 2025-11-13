@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:id="@+id/storm_ease_graph"
+    app:startDestination="@id/stormEaseLoadFragment">
+
+    <fragment
+        android:id="@+id/stormEaseLoadFragment"
+        android:name="com.stromeese.appsofr.eojgir.presentation.ui.load.StormEaseLoadFragment"
+        android:label="StormEaseLoadFragment" >
+        <action
+            android:id="@+id/action_stormEaseLoadFragment_to_stormEaseV"
+            app:destination="@id/stormEaseV"
+            app:popUpTo="@id/storm_ease_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/stormEaseV"
+        android:name="com.stromeese.appsofr.eojgir.presentation.ui.view.StormEaseV"
+        android:label="StormEaseV" />
+</navigation>
