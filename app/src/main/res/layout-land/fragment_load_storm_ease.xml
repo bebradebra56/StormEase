@@ -6,11 +6,12 @@
     android:background="@color/white"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <View
+    <ImageView
         android:id="@+id/stormEaseBackground"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@color/hatch_plan_dark_surface_color"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/storm_ease_backgorund"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -30,18 +31,13 @@
         android:visibility="gone"
         app:constraint_referenced_ids="stormEaseConnectionState" />
 
-    <TextView
+    <ImageView
         android:id="@+id/stormEaseProgressText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/black_han_sans"
-        android:shadowColor="@color/black"
-        android:shadowDx="2"
-        android:shadowDy="2"
-        android:shadowRadius="10"
-        android:text="Loading..."
-        android:textColor="@color/hatch_plan_yellow"
-        android:textSize="30sp"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        app:srcCompat="@drawable/storm_ease_loading"
         app:layout_constraintBottom_toTopOf="@+id/stormEaseProgress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -50,31 +46,24 @@
         android:id="@+id/stormEaseProgress"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:indeterminateTint="@color/hatch_plan_yellow"
+        android:indeterminateTint="@color/storm_ease_blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.76" />
+        app:layout_constraintVertical_bias="0.63" />
 
 
-    <TextView
+    <ImageView
         android:id="@+id/stormEaseConnectionState"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/black_han_sans"
-        android:shadowColor="@color/black"
-        android:shadowDx="2"
-        android:shadowDy="2"
-        android:shadowRadius="10"
-        android:text="No internet connection"
-        android:textColor="@color/hatch_plan_yellow"
-        android:textSize="30sp"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/storm_ease_connect"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.44" />
+        app:layout_constraintVertical_bias="0.26999998" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/stormEaseNotiGroup"
@@ -92,16 +81,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/hatch_plan_landscape_back" />
+        app:srcCompat="@drawable/storm_ease_lanscape_back" />
 
     <TextView
         android:id="@+id/stormEaseNotifText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginEnd="31dp"
-        android:layout_marginBottom="10dp"
-        android:fontFamily="@font/black_han_sans"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="9dp"
+        android:fontFamily="@font/gasoek_one"
         android:gravity="center"
         android:shadowColor="@color/black"
         android:shadowDx="2"
@@ -120,11 +109,11 @@
         android:id="@+id/stormEaseGrandButton"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginStart="61dp"
-        android:layout_marginEnd="61dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/hatch_plan_btn"
-        android:fontFamily="@font/black_han_sans"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/storm_ease_btn"
+        android:fontFamily="@font/gasoek_one"
         android:shadowColor="@color/black"
         android:shadowDx="2"
         android:shadowDy="2"
@@ -139,8 +128,8 @@
         android:id="@+id/stormEaseSkipButton"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="2dp"
-        android:fontFamily="@font/black_han_sans"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/gasoek_one"
         android:gravity="center"
         android:shadowColor="@color/black"
         android:shadowDx="2"
@@ -159,8 +148,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginBottom="12dp"
-        android:fontFamily="@font/black_han_sans"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/gasoek_one"
         android:gravity="center"
         android:letterSpacing="0"
         android:shadowColor="@color/black"

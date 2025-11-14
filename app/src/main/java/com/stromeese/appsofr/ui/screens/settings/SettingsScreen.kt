@@ -1,5 +1,7 @@
 package com.stromeese.appsofr.ui.screens.settings
 
+import android.content.Intent
+import android.net.Uri
 import androidx.compose.animation.*
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -42,6 +44,7 @@ fun SettingsScreen(
 ) {
     val uiState by viewModel.uiState.collectAsState()
     val isDarkTheme = uiState.isDarkTheme
+    val context = LocalContext.current
 
     Box(modifier = Modifier.fillMaxSize()) {
         // Background
@@ -113,6 +116,18 @@ fun SettingsScreen(
                 // About Section
                 item {
                     SectionHeader(title = "About", icon = "ℹ️")
+                }
+
+                item {
+                    DangerCard(
+                        title = "Privacy Policy",
+                        description = "Tap to Read",
+                        icon = "⚖\uFE0F",
+                        onAction = {
+                            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://sttormease.com/privacy-policy.html"))
+                            context.startActivity(intent)
+                        }
+                    )
                 }
 
                 item {
