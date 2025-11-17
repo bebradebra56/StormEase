@@ -82,7 +82,7 @@ fun HomeScreen(
                     title = {
                         Column {
                             Text(
-                                "StormEase",
+                                "Olymp Ease",
                                 style = MaterialTheme.typography.headlineSmall,
                                 fontWeight = FontWeight.Bold
                             )
